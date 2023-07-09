@@ -1,0 +1,40 @@
+name: Run Treesitter Test
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Cache
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
+          target/
+        key: v3-${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
+
+    - name: Install tree-sitter-cli
+      run: |
+        if ! command -v tree-sitter > /dev/null; then
+          cargo install tree-sitter-cli
+        fi
+
+    - name: Compile parser
+      run: tree-sitter generate
+
+    - name: Run tests
+      run: tree-sitter test
