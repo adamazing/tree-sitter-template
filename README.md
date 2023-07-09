@@ -12,11 +12,11 @@
   - [Getting started](#getting-started)
   - [More details about this template](#more-details-about-this-template)
     - [CI/Tests](#citests)
+    - [Goals](#goals)
+    - [Contributing / Feedback](#contributing-feedback)
+    - [Support](#support)
   - [Useful resources](#useful-resources)
   - [What even ***is*** tree-sitter?](#what-even-is-tree-sitter)
-- [Goals](#goals)
-- [Contributing / Feedback](#contributing-feedback)
-- [Support](#support)
 <!--toc:end-->
 
 ## Intro
