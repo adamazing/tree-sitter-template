@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/github/license/adamazing/tree-sitter-template?label=License)](LICENSE "MIT")
 [![Latest release)](https://img.shields.io/github/v/tag/adamazing/tree-sitter-template?logo=SemVer&include_prereleases&label=Release)](releases)
-[![Main branch test status](https://img.shields.io/github/actions/workflow/status/adamazing/tree-sitter-template/test.yml?event=push&logo=githubactions&logoColor=rgb(255%2C255%2C255)&label=Build)](actions/workflows/test.yml?query=event%3Apush)
+[![Main branch test status](https://img.shields.io/github/actions/workflow/status/adamazing/tree-sitter-template/test.yml?event=push&logo=githubactions&logoColor=rgb(255%2C255%2C255)&label=Build)](https://github.com/adamazing/tree-sitter-template/actions/workflows/test.yml?query=event%3Apush)
 
 </div>
 
@@ -74,7 +74,7 @@ I want to make it as easy as possible for myself and others to quickly get start
 ## Support
 
 If you've found this useful, please consider:  
-    🌟 starring the repo  
-    💲 [sponsoring](https://github.com/sponsors/adamazing) me  
-    ⚧️  supporting [OutLine](https://outline.org.nz/donate)  
-    ✍️ following me on [Medium](https://medium.com/@adamhenley)
+    - 🌟 starring the repo  
+    - 💲 [sponsoring](https://github.com/sponsors/adamazing) me  
+    - ⚧️  supporting [OutLine](https://outline.org.nz/donate)  
+    - ✍️ following me on [Medium](https://medium.com/@adamhenley)
