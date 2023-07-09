@@ -7,6 +7,18 @@
 
 </div>
 
+<!--toc:start-->
+- [Intro](#intro)
+  - [Getting started](#getting-started)
+  - [More details about this template](#more-details-about-this-template)
+    - [CI/Tests](#citests)
+  - [Useful resources](#useful-resources)
+  - [What even ***is*** tree-sitter?](#what-even-is-tree-sitter)
+- [Goals](#goals)
+- [Contributing / Feedback](#contributing-feedback)
+- [Support](#support)
+<!--toc:end-->
+
 ## Intro
 This is a template that you can use to help you get started creating your first [tree-sitter](https://github.com/tree-sitter/tree-sitter) grammar parser!
 
@@ -20,7 +32,10 @@ This repository is a template. Click the button to create your own repo using th
 > **E.g.** For Go, this is [tree-sitter-go](https://github.com/tree-sitter/tree-sitter-go).  
 
 Once you have created your new repository, you can use your tool of choice to search and replace on the string: `tree-sitter-template` in order to name your new language grammar parser!
-  
+   
+
+Check out the [Useful Resources](#useful-resources) section below to learn more about building your new grammar parser. There are also some helpful hints and links in the template itself. 
+
 ### More details about this template
 
 #### CI/Tests
@@ -30,6 +45,30 @@ I have intentionally included a failing test ([test/corpus/failing.txt](./test/c
 To get it passing (and make [test/corpus/hello.txt](./test/corpus/hello.txt) start failing), follow the instructions in [grammar.js](./grammar.js). Or, you know, you could just delete the failing test ;).  
 
 Once you have tests passing, you may want to set up branch protection in your repo so that you don't accidentally ship a broken parser.
+
+#### Goals
+
+I want to make it as easy as possible for myself and others to quickly get started with all the boilerplate and some good pointers to get them on their way with the minimum of fuss. 
+
+🙌   Minimal (Github Actions) CI for testing.  
+🧚   The correct amount of example code:  
+&nbsp;&nbsp;   👍  enough to help new people get started  
+&nbsp;&nbsp;   👎  not so much as to get in the way of people who know what they're doing  
+
+#### Contributing / Feedback
+
+💡 Open to ideas! [Create an issue!](../issues)
+
+#### Support
+
+If you've found this useful, please consider:  
+   - 🌟 starring the repo  
+   - 💲 [sponsoring](https://github.com/sponsors/adamazing) me  
+   - ⚧️  supporting [OutLine](https://outline.org.nz/donate)  
+   - ✍️ following me on [Medium](https://medium.com/@adamhenley)
+   
+   
+---
 
 ### Useful resources
 
@@ -56,25 +95,3 @@ Features of tree-sitter:
  - Error recovery  
    - An error in one part of your code doesn't mean the whole of the code is bad.  
  
-
-## Goals
-
-I want to make it as easy as possible for myself and others to quickly get started with all the boilerplate and some good pointers to get them on their way with the minimum of fuss. 
-
-🙌   Minimal (Github Actions) CI for testing.  
-🧚   The correct amount of example code:  
-&nbsp;&nbsp;   👍  enough to help new people get started  
-&nbsp;&nbsp;   👎  not so much as to get in the way of people who know what they're doing  
-
-
-## Contributing / Feedback
-
-💡 Open to ideas! [Create an issue!](../issues)
-
-## Support
-
-If you've found this useful, please consider:  
-    - 🌟 starring the repo  
-    - 💲 [sponsoring](https://github.com/sponsors/adamazing) me  
-    - ⚧️  supporting [OutLine](https://outline.org.nz/donate)  
-    - ✍️ following me on [Medium](https://medium.com/@adamhenley)
