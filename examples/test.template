@@ -1,0 +1,7 @@
+// This is a comment
+
+func foo(bar) begin
+  // This is another comment
+  return 1;
+  // This is also a comment
+end

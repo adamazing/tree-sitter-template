@@ -1,0 +1,16 @@
+// This is a normal comment
+// <- comment.line.double-slash
+
+func foo(thing) begin
+// <- keyword
+  // ^^^ entity.name.function
+  //     ^^^^^ variable.parameter
+  //            ^^^^^ keyword
+  return 1;
+//       ^ constant.numeric
+
+  return "1";
+//^^^^^^ keyword.control
+//       ^^^ string
+end
+ // <- keyword
