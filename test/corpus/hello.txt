@@ -1,9 +1,0 @@
-=========================
-Test of the default rule
-=========================
-
-hello
-
----
-
-(source_file)

@@ -12,6 +12,7 @@
   - [Getting started](#getting-started)
   - [More details about this template](#more-details-about-this-template)
     - [CI/Tests](#citests)
+    - [Starting grammar & tests](#starting-grammar-tests)
     - [Goals](#goals)
     - [Contributing / Feedback](#contributing-feedback)
     - [Support](#support)
@@ -41,14 +42,22 @@ Check out the [Useful Resources](#useful-resources) section below to learn more 
 #### CI/Tests
 I have set up a basic Github Action Workflow that will attempt to generate a parser from the grammar.js file and then run tree-sitter's tests with `tree-sitter test`.
 
-I have intentionally included a failing test ([test/corpus/failing.txt](./test/corpus/failing.txt))!
-To get it passing (and make [test/corpus/hello.txt](./test/corpus/hello.txt) start failing), follow the instructions in [grammar.js](./grammar.js). Or, you know, you could just delete the failing test ;).  
+ ℹ️  &nbsp; You may want to set up [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging) in your repo so that you don't accidentally ship a broken parser.
 
-Once you have tests passing, you may want to set up branch protection in your repo so that you don't accidentally ship a broken parser.
+#### Starting grammar & tests
+
+I wrote a function in a pseudo language without thinking much about it. 
+It has go's `func` keyword, but no types. It has `ruby`'s `begin` and `end` keywords in place of curly brackets, but still has semi-colons.  
+
+I have added a very minimal parser, defined in [`grammar.js`](./grammar.js), that you can look at and play with.  
+
+I make no claim or guarantee that this hastily-built parser is as good as it can be, but it does use the basics of tree-sitter's DSL, and functions -- after a fashion -- to parse and construct an AST for this toy language.
+
+There is a minimal working highlights file at [`queries/highlights.scm`](./queries/highlights.scm) and some basic tests for those at [`test/highlights/func-highlights.template`](./test/highlight/func-highlights.template).
 
 #### Goals
 
-I want to make it as easy as possible for myself and others to quickly get started with all the boilerplate and some good pointers to get them on their way with the minimum of fuss. 
+I want to make it as easy as possible for myself and others to quickly get started with some of the boilerplate and some good pointers to get them on their way with the minimum of fuss. 
 
 🙌   Minimal (Github Actions) CI for testing.  
 🧚   The correct amount of example code:  

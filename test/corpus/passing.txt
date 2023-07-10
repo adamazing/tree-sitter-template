@@ -1,5 +1,5 @@
 ======================
-A default failing test
+A passing test file
 ======================
 
 func foo() begin
