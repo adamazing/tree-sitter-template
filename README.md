@@ -1,6 +1,7 @@
 <h1 align="center">tree-sitter-template🌴🪑?</h1>
 <div align="center">
-
+  
+[![Ceasefire Now](https://badge.techforpalestine.org/default)](https://techforpalestine.org/learn-more)
 [![License](https://img.shields.io/github/license/adamazing/tree-sitter-template?label=License)](LICENSE "MIT")
 [![Latest release)](https://img.shields.io/github/v/tag/adamazing/tree-sitter-template?logo=SemVer&include_prereleases&label=Release)](releases)
 [![Main branch test status](https://img.shields.io/github/actions/workflow/status/adamazing/tree-sitter-template/test.yml?event=push&logo=githubactions&logoColor=rgb(255%2C255%2C255)&label=Build)](https://github.com/adamazing/tree-sitter-template/actions/workflows/test.yml?query=event%3Apush)
